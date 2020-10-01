@@ -42,7 +42,7 @@ TagManager:
   - Moving Platform
   - Movable Object Detector
   - Bodiless Enemy
-  - 
+  - IntroAnimation
   - 
   m_SortingLayers:
   - name: Default

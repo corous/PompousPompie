@@ -10,10 +10,10 @@ public class MarioStompBox : MonoBehaviour {
 		t_LevelManager = FindObjectOfType<LevelManager> ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	//// Update is called once per frame
+	//void Update () {
 		
-	}
+	//}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag.Contains("Enemy") && other.gameObject.tag != "Enemy/Piranha"

@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour {
 	public int hitByBlockBonus;
 	public int fireballBonus;
 	public int stompBonus;
+	public bool dead = false;
 
 	public bool isBeingStomped;
 	

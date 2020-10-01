@@ -18,6 +18,7 @@ public class Goomba : Enemy {
 	}
 
 	public override void StompedByMario() {
+		dead = true;
 		isBeingStomped = true;
 		StopInteraction ();
 		Debug.Log (this.name + " StompedByMario: stopped interaction");

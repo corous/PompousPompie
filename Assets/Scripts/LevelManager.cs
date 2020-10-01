@@ -337,18 +337,19 @@ public class LevelManager : MonoBehaviour {
 			}
 		}
 	}
-		
 
-	/****************** Kill enemy */
-	public void MarioStompEnemy(Enemy enemy) {
-		mario_Rigidbody2D.velocity = new Vector2 (mario_Rigidbody2D.velocity.x + stompBounceVelocity.x, stompBounceVelocity.y);
-		enemy.StompedByMario ();
-		soundSource.PlayOneShot (stompSound);
-		AddScore (enemy.stompBonus, enemy.gameObject.transform.position);
-		Debug.Log (this.name + " MarioStompEnemy called on " + enemy.gameObject.name);
-	}
 
-	public void MarioStarmanTouchEnemy(Enemy enemy) {
+    /****************** Kill enemy */
+    public void MarioStompEnemy(Enemy enemy)
+    {
+        mario_Rigidbody2D.velocity = new Vector2(mario_Rigidbody2D.velocity.x + stompBounceVelocity.x, stompBounceVelocity.y);
+        enemy.StompedByMario();
+        soundSource.PlayOneShot(stompSound);
+        AddScore(enemy.stompBonus, enemy.gameObject.transform.position);
+        Debug.Log(this.name + " MarioStompEnemy called on " + enemy.gameObject.name);
+    }
+
+    public void MarioStarmanTouchEnemy(Enemy enemy) {
 		enemy.TouchedByStarmanMario ();
 		soundSource.PlayOneShot (kickSound);
 		AddScore (enemy.starmanBonus, enemy.gameObject.transform.position);

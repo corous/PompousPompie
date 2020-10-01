@@ -15,6 +15,7 @@ public class Koopa : Enemy {
 	}
 
 	public override void StompedByMario() {
+		dead = true;
 		isBeingStomped = true;
 		StartCoroutine (SpawnKoopaShellCo ());
 	}
